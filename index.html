@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/sign.css" />
+    <link rel="stylesheet" href="./src/styles/board.css" />
+    <link rel="stylesheet" href="./src/styles/bulletin.css" />
+    <link rel="stylesheet" href="./src/styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://kit.fontawesome.com/8bdc7d2339.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./src/components/main.js" defer></script>
+    <title>해피 하우스</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__main">
+        <i class="fas fa-home"></i>
+        <a href="index.html">Happy House</a>
+      </div>
+      <ul class="header__menu">
+        <li><button class="signin-btn">로그인</button></li>
+        <li><button class="signup-btn">회원가입</button></li>
+        <li><button class="board-btn hide">자유게시판</button></li>
+        <li><button class="bulletin-btn hide">글쓰기</button></li>
+      </ul>
+      <a href="#" class="header__toggleBtn"><i class="fas fa-bars"></i></a>
+    </header>
+    <section class="main-content">
+      <section class="search">
+        <select class="select city">
+          <option value="all">도/광역시</option>
+          <option value="서울특별시">서울특별시</option>
+          <option value="경기도">경기도</option>
+          <option value="인천광역시">인천광역시</option>
+          <option value="부산광역시">부산광역시</option>
+          <option value="대전광역시">대전광역시</option>
+          <option value="대구광역시">대구광역시</option>
+          <option value="울산광역시">울산광역시</option>
+          <option value="세종특별자치시">세종시</option>
+          <option value="광주광역시">광주광역시</option>
+          <option value="강원도">강원도</option>
+          <option value="충청북도">충청북도</option>
+          <option value="경상북도">경상북도</option>
+          <option value="경상남도">경상남도</option>
+          <option value="전라북도">전라북도</option>
+          <option value="전라남도">전라남도</option>
+          <option value="제주특별자치도">제주도</option>
+        </select>
+        <select class="select si">
+          <option value="all">시/구/군</option>
+        </select>
+      </section>
+
+      <div class="map__and__info">
+        <div id="map"></div>
+        <ul class="map-info-list"></ul>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer_nav">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일 무단수집거부</a></li>
+        <li><a href="#">부동산 고객센터</a></li>
+        <li><a href="#">사이트 맵</a></li>
+      </ul>
+      <ul class="footer_info">
+        <li>해피하우스 부동산 (주) 대표 : 김싸피</li>
+        <li>대전광역시 유성구 덕명동 124번지 삼성화재 유성캠퍼스</li>
+        <li>고객센터 : 042)820-1234</li>
+        <li>이메일 문의 : ssafy@happyhouse.com</li>
+        <li style="font-weight: bold">
+          Copyright &copy; 해피하우스 부동산.all rights reserved
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AqNrWjzHI-SmVRPjBHuzhUraRdNFVUw"
+      async
+    ></script>
+  </body>
+</html>
