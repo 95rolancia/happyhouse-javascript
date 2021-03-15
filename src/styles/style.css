@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  padding: 8px 48px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__main {
+  font-size: x-large;
+  color: whitesmoke;
+}
+
+.header__main i {
+  color: orange;
+}
+
+.header__main a {
+  color: orange;
+}
+
+.header__menu {
+  display: flex;
+  padding: 0px;
+  justify-content: space-evenly;
+}
+
+.header__menu button {
+  color: orange;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.header__menu button:hover {
+  transform: scale(1.02);
+  color: blueviolet;
+}
+
+.header__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+/* Search drop box*/
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  padding: 32px;
+}
+
+.select {
+  margin: 12px;
+  outline: none;
+  border: 0.5px solid darkgray;
+  padding: 6px;
+}
+
+/* My page */
+.mypage {
+  width: 500px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.mypage-btns {
+  display: flex;
+}
+
+.mypage-btns button {
+  width: 100%;
+  border: 1px solid darkgray;
+  color: whitesmoke;
+  background-color: blueviolet;
+  font-size: 24px;
+}
+
+.mypage-btns .update {
+  margin-right: 12px;
+}
+
+/* Map */
+#map {
+  width: 400px;
+  height: 400px;
+  margin-left: 32px;
+}
+
+/* Item */
+
+.map-info-list li {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-description {
+  display: block;
+  padding: 1em 0.5em;
+  color: #515151;
+  text-decoration: none;
+}
+
+.card-description > h1 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5em;
+}
+
+.card-description > p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: center; /* check */
+  }
+
+  .header__menu li:hover {
+    background-color: orange;
+    border-radius: 4px;
+  }
+
+  .header__toggleBtn {
+    display: block;
+  }
+
+  .header__menu.active {
+    display: flex;
+  }
+}
