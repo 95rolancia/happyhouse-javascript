@@ -1,0 +1,192 @@
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal.signup.hide,
+.modal.signin.hide {
+  display: none;
+}
+
+/* Modal Content/Box */
+.modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  padding: 24px 36px;
+  border-radius: 1em;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal__content__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  font-size: 24px;
+}
+
+.close:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* Set a style for all buttons */
+.signin-form__btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* 회원가입 모달 */
+.modal.signup .modal__content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  min-width: 400px;
+}
+
+.form__row {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 14px;
+  outline: none;
+  border: 0.5px solid darkgray;
+}
+
+.signup-form__email {
+  display: flex;
+  align-items: center;
+}
+
+.form__row.email {
+  width: 100%;
+  display: inline;
+}
+
+.email-center {
+  margin: 0 3px;
+}
+
+.form__row.has--button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+button.certification,
+button.address {
+  width: 130px;
+  height: 44px;
+  margin-left: 20px;
+  font-size: 16px;
+  border: 0.5px solid darkgray;
+  color: darkgray;
+}
+
+.form__row.info {
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: none;
+}
+
+.form__row.info .info__list {
+  padding: 0;
+}
+
+.form__row.info .info__list li {
+  list-style: outside;
+  font-size: 12px;
+}
+
+.form__row.checkbox {
+  display: inline;
+}
+
+.signup-form__info {
+  margin-top: 40px;
+}
+
+.signup-form__address {
+  display: flex;
+}
+
+.checkbox.terms--all {
+  margin-bottom: 12px;
+}
+
+.checkbox.terms--all label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.agree {
+  text-align: end;
+}
+
+.agree > a {
+  color: darkgrey;
+  text-decoration: underline;
+}
+
+.signup-form__btn {
+  width: 100%;
+  height: 70px;
+  font-size: 28px;
+  background-color: blueviolet;
+  color: white;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
